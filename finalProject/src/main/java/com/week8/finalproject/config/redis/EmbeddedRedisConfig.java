@@ -9,12 +9,12 @@ import redis.embedded.RedisServer;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-@Profile("prac-interview.shop")
+@Profile("")
 @Configuration
 @RequiredArgsConstructor
 public class EmbeddedRedisConfig {
 
-    @Value("6379")
+    @Value("")
     private int redisPort;
 
     private RedisServer redisServer;
